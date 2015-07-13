@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         clean: {
-            build: ['build/'],
+            build: ['build/', 'tmp/'],
             dist: ['dist/']
         },
         copy: {
@@ -27,8 +27,15 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/',
                     src: ['js/**/*.js'],
-                    dest: 'build/'
+                    dest: 'tmp/'
                 }]
+            }
+        },
+        browserify: {
+            build: {
+                files: {
+                    'build/js/app.js': ['tmp/js/**/*.js']
+                }
             }
         },
         connect: {
@@ -46,20 +53,25 @@ module.exports = function(grunt) {
                 options: {
                     livereload: true
                 },
-                files: 'build/**/*.*',
-                tasks: []
+                files: 'build/**/*.*'
             },
             js: {
                 files: 'src/js/**/*.js',
-                tasks: ['babel:build']
+                tasks: ['babel:build', 'browserify:build']
             },
             html: {
                 files: 'src/**/*.html',
                 tasks: ['copy:build']
+            },
+            Gruntfile: {
+                options: {
+                    reload: true
+                },
+                files: 'Gruntfile.js'
             }
         }
     });
 
-    grunt.registerTask('build', ['clean:build', 'babel:build', 'copy:build']);
+    grunt.registerTask('build', ['clean:build', 'babel:build', 'browserify:build', 'copy:build']);
     grunt.registerTask('serve', ['build', 'connect:build', 'watch']);
 };
