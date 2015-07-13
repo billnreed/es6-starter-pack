@@ -6,10 +6,5 @@ It provides a build process which transpiles ES6 code to ES5 with support for ES
 Run `grunt serve` and visit `http://localhost:9000` in the browser to develop. Livereload is enabled so as you make 
 changes and save your files, the browser will automatically refresh.
 
-[Browserify](http://browserify.org/) is used with [babelify](https://github.com/babel/babelify) to transpile the code and enable ES6 module 
-support. 
-
-~~Unfortunately, I haven't been able to get source maps to work correctly with `babelify` or `es6ify`.~~
-~~* babelify will generate the source maps, but they are for the already transpiled files.~~
-~~* es6ify will generate source maps, but the browser dev tools show empty files.~~
-Update: es6ify doesn't work with 1.6, but does work with 1.4. Hmmm.
+[Browserify](http://browserify.org/) is used with [es6ify](https://github.com/thlorenz/es6ify) to transpile the code 
+and enable ES6 module support. Note that this wasn't working with es6ify 1.6.0, but is working with 1.4.0. 
