@@ -1,8 +1,8 @@
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
-    grunt.initConfig(loadPluginConfig('tasks/options/'));
-    grunt.loadTasks('tasks');
+    grunt.initConfig(loadPluginConfig('config/grunt/plugins/'));
+    grunt.loadTasks('config/grunt/tasks');
 
     function loadPluginConfig(folderPath) {
         var glob = require('glob');
