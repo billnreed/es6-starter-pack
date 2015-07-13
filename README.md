@@ -9,6 +9,7 @@ changes and save your files, the browser will automatically refresh.
 [Browserify](http://browserify.org/) is used with [babelify](https://github.com/babel/babelify) to transpile the code and enable ES6 module 
 support. 
 
-Unfortunately, I haven't been able to get source maps to work correctly with `babelify` or `es6ify`.
-* babelify will generate the source maps, but they are for the already transpiled files.
-* es6ify will generate source maps, but the browser dev tools show empty files.
+~~Unfortunately, I haven't been able to get source maps to work correctly with `babelify` or `es6ify`.~~
+~~* babelify will generate the source maps, but they are for the already transpiled files.~~
+~~* es6ify will generate source maps, but the browser dev tools show empty files.~~
+Update: es6ify doesn't work with 1.6, but does work with 1.4. Hmmm.

@@ -1,3 +1,3 @@
 module.exports = function(grunt) {
-    grunt.registerTask('build', ['clean:build', 'babel:build', 'browserify:build', 'copy:build']);
+    grunt.registerTask('build', ['clean:build', 'browserify:build', 'copy:build']);
 };

@@ -1,7 +1,13 @@
 module.exports = {
     build: {
+        options: {
+            browserifyOptions: {
+                debug: true
+            },
+            transform: ['es6ify']
+        },
         files: {
-            'build/js/app.js': ['tmp/js/**/*.js']
+            'build/js/app.js': ['src/js/**/*.js']
         }
     }
 };
