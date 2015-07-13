@@ -1,0 +1,15 @@
+{
+  "name": "es6-project-starter",
+  "version": "0.0.0",
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.build.ge.com:212068341/es6-project-starter.git"
+  },
+  "author": "Bill Reed <william.reed@ge.com>",
+  "license": "MIT"
+}
