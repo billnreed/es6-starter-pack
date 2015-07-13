@@ -3,8 +3,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         clean: {
-            build: ['build/', 'tmp/'],
-            dist: ['dist/']
+            build: ['build/', 'tmp/']
         },
         copy: {
             build: {
