@@ -13,9 +13,9 @@ module.exports = {
         files: 'src/**/*.html',
         tasks: ['copy:build']
     },
-    tests: {
-        files: ['src/js/**/*.js', 'tests/**/*.js'],
-        tasks: ['browserify:test', 'karma:test']
+    test: {
+        files: ['src/js/**/*.js', 'tests/**/*-test.js'],
+        tasks: ['test']
     },
     Gruntfile: {
         options: {

@@ -2,14 +2,12 @@ module.exports = {
     test: {
         frameworks: ['jasmine', 'browserify'],
         files: [
-            { pattern: 'src/js/sum.js' },
-            { pattern: 'tests/**/*-test.js' }
+            { pattern: 'tmp/test/**/*.js' }
         ],
         browsers: ['PhantomJS'],
-        singleRun: false,
+        singleRun: true,
         preprocessors: {
-            'src/js/sum.js': ['browserify'],
-            'tests/**/*-test.js': ['browserify']
+            'tmp/test/**/*.js': ['browserify']
         },
         browserify: {
             transform: ['es6ify'],
