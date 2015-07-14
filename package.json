@@ -23,10 +23,9 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-karma": "^0.11.2",
     "karma": "^0.12.37",
+    "karma-browserify": "^4.2.1",
     "karma-chrome-launcher": "^0.2.0",
     "karma-jasmine": "^0.2.2",
-    "karma-traceur-preprocessor": "^0.4.0",
-    "load-grunt-tasks": "^3.2.0",
-    "traceur": "0.0.90"
+    "load-grunt-tasks": "^3.2.0"
   }
 }

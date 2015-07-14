@@ -1,18 +1,19 @@
 module.exports = {
     test: {
-        frameworks: ['jasmine', 'traceur'],
+        frameworks: ['jasmine', 'browserify'],
         files: [
-            { pattern: 'tests/**/*.js' }
+            { pattern: 'src/js/sum.js' },
+            { pattern: 'tests/**/*-test.js' }
         ],
         browsers: ['Chrome'],
-        singleRun: true,
+        singleRun: false,
         preprocessors: {
-            'tests/**/*.js': ['traceur']
+            'src/js/sum.js': ['browserify'],
+            'tests/**/*-test.js': ['browserify']
         },
-        traceurPreprocessor: {
-            options: {
-                modules: 'commonjs'
-            }
+        browserify: {
+            transform: ['es6ify'],
+            extensions: ['.js']
         }
     }
 };
