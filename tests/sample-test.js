@@ -1,9 +1,10 @@
-import {sum} from './sum';
+//import {sum} from './sum';
 
 console.log('see me?');
 
-describe('adding something', () => {
-    it('works like this', () => {
-        expect(sum(5, 2)).toBe(7);
+describe('am i running', () => {
+    it('who knows', () => {
+        console.log('running');
+        //expect(sum(5, 2)).toBe(7);
     });
 });

@@ -1,8 +1,18 @@
 module.exports = {
     test: {
-        frameworks: ['jasmine', 'es6-shim'],
-        files: ['tmp/test/bundle.js'],
-        browsers: ['PhantomJS'],
-        singleRun: true
+        frameworks: ['jasmine', 'traceur'],
+        files: [
+            { pattern: 'tests/**/*.js' }
+        ],
+        browsers: ['Chrome'],
+        singleRun: true,
+        preprocessors: {
+            'tests/**/*.js': ['traceur']
+        },
+        traceurPreprocessor: {
+            options: {
+                modules: 'commonjs'
+            }
+        }
     }
 };

@@ -8,15 +8,5 @@ module.exports = {
                 dest: 'build/'
             }
         ]
-    },
-    test: {
-        files: [
-            {
-                expand: true,
-                flatten: true,
-                src: ['src/js/**/*.js', 'tests/**/*.js'],
-                dest: 'tmp/test/'
-            }
-        ]
     }
 };
