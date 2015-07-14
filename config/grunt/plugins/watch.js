@@ -7,11 +7,15 @@ module.exports = {
     },
     js: {
         files: 'src/js/**/*.js',
-        tasks: ['babel:build', 'browserify:build']
+        tasks: ['browserify:build']
     },
     html: {
         files: 'src/**/*.html',
         tasks: ['copy:build']
+    },
+    test: {
+        files: ['src/js/**/*.js', 'tests/**/*-test.js'],
+        tasks: ['test']
     },
     Gruntfile: {
         options: {
