@@ -5,7 +5,7 @@ module.exports = {
             { pattern: 'src/js/sum.js' },
             { pattern: 'tests/**/*-test.js' }
         ],
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
         singleRun: false,
         preprocessors: {
             'src/js/sum.js': ['browserify'],
