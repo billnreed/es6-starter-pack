@@ -7,7 +7,7 @@ Run `grunt serve` and visit `http://localhost:9000` in the browser to develop. L
 changes and save your files, the browser will automatically refresh.
 
 [Browserify](http://browserify.org/) is used with [es6ify](https://github.com/thlorenz/es6ify) to transpile the code 
-and enable ES6 module support. Note that this wasn't working with es6ify 1.6.0, but is working with 1.4.0.
+and enable ES6 module support. Note that source maps weren't working with es6ify 1.6.0, but do work with 1.4.0. 
 
 This technique compiles all your JavaScript files into one everything gets loaded onto the page at once. If everything
 is minified and the file size is small enough, then this should be okay. However, if it takes too long for the page to 
