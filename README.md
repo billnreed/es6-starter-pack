@@ -7,7 +7,9 @@ Run `grunt serve` and visit `http://localhost:9000` in the browser to develop. L
 changes and save your files, the browser will automatically refresh.
 
 Run `grunt test` to execute your unit tests once. Run `grunt tdd` to execute your unit tests as you make changes to 
-the source and test files. All tests must end with the `-test.js` to be picked up by Karma.
+the source and test files. All tests must end with the `.test.js` to be picked up by Karma. Your `tests` directory 
+should mirror the `src/js` directory's folder structure, and import statements should be written as if the tests were
+ in the same folder structure as the source files.
 
 [Browserify](http://browserify.org/) is used with [es6ify](https://github.com/thlorenz/es6ify) to transpile the code 
 and enable ES6 module support. Note that source maps weren't working with es6ify 1.6.0, but do work with 1.4.0. 
