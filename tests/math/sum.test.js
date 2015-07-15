@@ -6,6 +6,6 @@ describe('am i running', () => {
     });
 
     it('another one', () => {
-        expect(sum(1, 1)).toBe(2);
-    })
+        expect(sum(2, 1)).toBe(3);
+    });
 });

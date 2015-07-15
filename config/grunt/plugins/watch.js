@@ -14,7 +14,7 @@ module.exports = {
         tasks: ['copy:build']
     },
     test: {
-        files: ['src/js/**/*.js', 'tests/**/*-test.js'],
+        files: ['src/js/**/*.js', 'tests/**/*.test.js'],
         tasks: ['test']
     },
     Gruntfile: {

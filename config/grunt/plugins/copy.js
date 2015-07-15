@@ -17,9 +17,8 @@ module.exports = {
             dest: 'tmp/test'
         }, {
             expand: true,
-            flatten: true,
             cwd: 'tests/',
-            src: '**/*-test.js',
+            src: '**/*.test.js',
             dest: 'tmp/test'
         }]
     }
